@@ -4,14 +4,15 @@ using namespace std;
 
 class Persona{
     private:
-    
+
     char nombre[20];
     int edad;
+    int numero;
     float altura;
     int dni;
     char letra;
     float sueldo;
-    
+
     public:
     //#Declaro métodos:
     void setSueldo(float nuevoSueldo);
@@ -22,7 +23,7 @@ class Persona{
 };
 //#Definir los métodos:
 void Persona:: setSueldo(float nuevoSueldo){
-   this->sueldo = nuevoSueldo; 
+   this->sueldo = nuevoSueldo;
 }
 void Persona::setLetra(char nuevaLetra){
    this->letra = nuevaLetra;
@@ -42,7 +43,7 @@ char Persona::getLetra(){
 
 int main() {
     Persona persona1;
-    
+
     persona1.setSueldo(100);
     cout<<persona1.getSueldo()<<endl;
     persona1.setLetra('a');
